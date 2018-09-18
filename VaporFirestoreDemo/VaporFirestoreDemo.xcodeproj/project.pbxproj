@@ -21,6 +21,15 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		9F97890C215168D30085569B /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F978904215168D10085569B /* Provider.swift */; };
+		9F97890D215168D30085569B /* FernoValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F978905215168D10085569B /* FernoValue.swift */; };
+		9F97890E215168D30085569B /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F978906215168D10085569B /* Snapshot.swift */; };
+		9F97890F215168D30085569B /* FernoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F978907215168D20085569B /* FernoRequest.swift */; };
+		9F978910215168D30085569B /* FernoPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F978908215168D20085569B /* FernoPath.swift */; };
+		9F978911215168D30085569B /* FernoErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F978909215168D20085569B /* FernoErrors.swift */; };
+		9F978912215168D30085569B /* FernoRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F97890A215168D20085569B /* FernoRoutes.swift */; };
+		9F978913215168D30085569B /* FernoQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F97890B215168D20085569B /* FernoQuery.swift */; };
+		9F978915215169720085569B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F978914215169720085569B /* Constants.swift */; };
 		OBJ_1051 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* AppTests.swift */; };
 		OBJ_1053 /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "VaporFirestoreDemo::App::Product" /* App.framework */; };
 		OBJ_1054 /* JWT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "JWT::JWT::Product" /* JWT.framework */; };
@@ -5151,6 +5160,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F978904215168D10085569B /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		9F978905215168D10085569B /* FernoValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FernoValue.swift; sourceTree = "<group>"; };
+		9F978906215168D10085569B /* Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snapshot.swift; sourceTree = "<group>"; };
+		9F978907215168D20085569B /* FernoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FernoRequest.swift; sourceTree = "<group>"; };
+		9F978908215168D20085569B /* FernoPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FernoPath.swift; sourceTree = "<group>"; };
+		9F978909215168D20085569B /* FernoErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FernoErrors.swift; sourceTree = "<group>"; };
+		9F97890A215168D20085569B /* FernoRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FernoRoutes.swift; sourceTree = "<group>"; };
+		9F97890B215168D20085569B /* FernoQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FernoQuery.swift; sourceTree = "<group>"; };
+		9F978914215169720085569B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		"Console::Command::Product" /* Command.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Command.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Console::Product" /* Console.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Console.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Logging::Product" /* Logging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6752,6 +6770,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F9788F52151672E0085569B /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				9F978909215168D20085569B /* FernoErrors.swift */,
+				9F978908215168D20085569B /* FernoPath.swift */,
+				9F97890B215168D20085569B /* FernoQuery.swift */,
+				9F978907215168D20085569B /* FernoRequest.swift */,
+				9F97890A215168D20085569B /* FernoRoutes.swift */,
+				9F978905215168D10085569B /* FernoValue.swift */,
+				9F978904215168D10085569B /* Provider.swift */,
+				9F978906215168D10085569B /* Snapshot.swift */,
+				9F978914215169720085569B /* Constants.swift */,
+			);
+			path = Firestore;
+			sourceTree = "<group>";
+		};
 		OBJ_101 /* Migration */ = {
 			isa = PBXGroup;
 			children = (
@@ -7782,7 +7816,7 @@
 			path = Database;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -7792,7 +7826,6 @@
 				OBJ_23 /* Dependencies */,
 				OBJ_862 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_502 /* KeyedCache */ = {
@@ -8774,6 +8807,7 @@
 		OBJ_8 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				9F9788F52151672E0085569B /* Firestore */,
 				OBJ_9 /* Controllers */,
 				OBJ_11 /* Models */,
 				OBJ_13 /* app.swift */,
@@ -10563,7 +10597,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_862 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -11754,12 +11788,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				9F97890F215168D30085569B /* FernoRequest.swift in Sources */,
 				OBJ_913 /* TodoController.swift in Sources */,
 				OBJ_914 /* Todo.swift in Sources */,
+				9F97890D215168D30085569B /* FernoValue.swift in Sources */,
+				9F97890C215168D30085569B /* Provider.swift in Sources */,
+				9F978915215169720085569B /* Constants.swift in Sources */,
 				OBJ_915 /* app.swift in Sources */,
+				9F978912215168D30085569B /* FernoRoutes.swift in Sources */,
 				OBJ_916 /* boot.swift in Sources */,
+				9F97890E215168D30085569B /* Snapshot.swift in Sources */,
 				OBJ_917 /* configure.swift in Sources */,
 				OBJ_918 /* routes.swift in Sources */,
+				9F978913215168D30085569B /* FernoQuery.swift in Sources */,
+				9F978910215168D30085569B /* FernoPath.swift in Sources */,
+				9F978911215168D30085569B /* FernoErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

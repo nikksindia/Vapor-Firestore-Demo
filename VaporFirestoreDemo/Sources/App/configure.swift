@@ -33,5 +33,10 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
     var migrations = MigrationConfig()
     migrations.add(model: Todo.self, database: .sqlite)
     services.register(migrations)
+    
+    //ferno configuration
+    let fernoConfig = FernoConfig(basePath: Constants.DATABSE_PATH_URL, email: Constants.SERVICE_ACCOUNT_EMAIL, privateKey: Constants.SERVICE_ACCOUNT_SECRET)
+    services.register(fernoConfig)
+    try services.register(FernoProvider())
 
 }
